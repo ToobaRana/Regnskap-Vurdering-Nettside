@@ -1,0 +1,354 @@
+/** Vanlig CSS til f.eks. PC **/
+
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+
+#meny_lukket {
+    display: block;
+    position: absolute;
+    right: 5px;
+    z-index: 3;
+}
+
+nav {
+    float: right;
+    margin-left: 600px;
+    margin-top: 10px;
+}
+
+nav li {
+    display: inline;
+    background-color: white;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+nav a {
+    text-decoration: lightgray;
+    color: black;
+    margin: 5px;
+}
+
+
+main {
+    background-image: url(Bilder/Bakgrunn2.jpg) ;
+    background-size: cover;
+    border: solid 0.1px white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main div {
+    width: 500px;
+    background-color: white;
+    margin: 80px;
+    padding: 15px;
+    width: 50%;
+}
+
+
+main p {
+    font-family: sans-serif;
+    font-size: initial;
+    line-height: 25px;
+}
+
+main h1 {
+    color: grey;
+}
+
+.knapp {
+    margin: -10px;
+}
+
+.knapp a {
+    background-color: white;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    border: solid black;
+    border-radius: 5px 5px 5px;
+    text-decoration: none;
+    font-family: sans-serif, "verdana";
+    }
+
+a[href*="tjenester"] { 
+    background-color: #3351FF;
+    border: #3351FF solid;
+    color: white;
+    }
+
+a[href*="tjenester"]:hover {
+    box-shadow: 0px 5px 0px lightgrey;
+}
+
+a[href*="kontakt"]:hover {
+    background-color: #3351FF;
+    border: #3351FF solid;
+    color: white;
+    box-shadow: 0px 5px 0px lightgrey;
+}
+
+
+#tekstboks {
+    background-color: #EFEFEF;
+    padding: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: justify;
+    font-size: 1.5vw;
+    color: grey;
+    font-family: sans-serif, "verdana";
+}
+
+#info {
+    display: flex;
+    line-height: 20px;
+}
+
+#svartregnskap {
+    background: url(bilder/svartregnskap.jpeg);
+    background-repeat: no-repeat;
+    padding: 80px;
+    width: 50%;
+}
+
+#svartregnskap h2 {
+    font-family: sans-serif, "verdana";
+    font-size: 1.5vw;
+    color: white;
+}
+
+#svartregnskap h3 {
+    font-family: sans-serif, "verdana" ;
+    font-size: 2vw;
+    color: white;
+}
+
+#svartregnskap p {
+    font-family: sans-serif, "verdana" ;
+    font-size: 1vw;
+    color: white;
+}
+
+#hvitregnskap {
+    background: url(bilder/feather.jpg);
+    padding:90px;
+    width: 50%;
+}
+
+#hvitregnskap h4 {
+    font-family: sans-serif, "verdana" ;
+    font-size: 2vw;
+    color: black;
+}
+
+
+#hvitregnskap {
+    font-family: sans-serif, "verdana" ;
+    font-size: 1vw;
+    color: grey;
+}
+#bokstjenester {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #F6F6F6;
+}
+
+#bokstjenester h1 {
+    font-family: sans-serif, "verdana";
+    color: grey;
+}
+
+#bokstjenester p {
+    font-family: sans-serif, "verdana";
+    color: grey;
+}
+
+#service {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    line-height: 25px;
+
+}
+
+.ikoner {
+    color: grey;
+    width: 30%;
+    padding: 20px;
+}
+
+.ikoner img {
+    width: 100px;
+}
+
+footer {
+    font-family: sans-serif, "verdana";
+    text-align: center;
+    color: grey;
+    width: 100%;
+}
+
+
+footer h1 {
+    font-size: 2vw;
+    color: grey;
+    text-decoration: underline;
+}
+
+footer h2 {
+    font-size: 1vw;
+}
+
+.profilbilder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+}
+
+
+.profilbilder img {
+    width: 110px;
+    border-radius: 50%;
+    margin: 80px;
+    margin-bottom: -4px;
+}
+
+.profil {
+    margin-right: 30px;
+    padding: 10px;
+}
+
+
+/** spesielle endringer til skjermer under 600px**/
+
+
+@media screen and (max-width: 600px) {
+
+#tekstboks {
+    font-size: 4vw;
+    text-align: start;
+    line-height: 30px;
+}
+
+#info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#svartregnskap  {
+    width: 100%;
+}
+
+
+#svartregnskap h2{
+    font-size: 3vw;
+}
+
+#svartregnskap h3{
+    font-size: 5vw;
+    line-height: 24px;
+}
+
+#svartregnskap p{
+    font-size: 4.5vw;
+    line-height: 30px;
+}
+
+#hvitregnskap {
+    width: 100%;
+}
+
+#hvitregnskap h4{
+    font-size: 5vw;
+    line-height: 24px;
+}
+
+#hvitregnskap p {
+    font-size: 4.5vw;
+    line-height: 30px;
+}
+
+
+
+.ikoner {
+    width: 100%;
+    flex-direction: column;
+}
+
+#ring h1 {
+    font-size: 5vw;
+}
+
+#ring h2 {
+    font-size: 3vw;
+}
+
+
+li a {
+    display: block;
+    width: 180px;
+    padding: 5px;
+    background-color: darkgray;
+}
+
+nav {
+    position: absolute;
+    right: 5px;
+    z-index: 2;
+    margin: 0px;
+}
+
+ul {
+    padding: 0px;
+}
+
+#meny_aapen {
+    display: none;
+}
+
+#meny_aapen:target {
+    display: block;
+    background-color: darkgray;
+    position: absolute;
+    right: 5px;
+    z-index: 3;
+    margin: 0px;
+}
+
+}
+
+
+
+@media screen and (min-width:600px) {
+    #meny_aapen img{
+        display: none;
+    }
+    
+    #meny_lukket img{
+        display: none;
+    }
+}
+
+
+
+
+
+
